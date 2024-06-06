@@ -66,13 +66,13 @@ h5 {
     "vscode-edge-devtools.webhint": false
 }
 .container {
-    background-color: Purple;
+    background-color: blue;
     max-width: 600px;
     width: 80%;
     height: auto;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 2.5px solid red;
     border-radius: 5px;
     align-content: center;
     align-items: center;
