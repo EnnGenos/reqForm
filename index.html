@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="uyLab.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="muopee, muopee, muopeeDM, muopee, Home">
+    <meta name="author" content="muopee">
+    <title>Farewell Chillers</title>
+<link rel="stylesheet" href="uyLab.css">
+</head>
+<body>
+  <h5 align="left">Hello everyone, I'm just an ordinary batchmate of yours is requesting you to join the farewell program partially arranged by <a href="https://uylab.org/">UY Lab</a>. It's understandable, not everyone can join the farewell due to a lot of enternal & external issues. But at the ones participated in the exam, try a heart soul try to join and let's hang over!</h5>
+  <br>
+  <div class="image-container">
+    <div class="image">
+      <img src="uyFarewell.jpg" alt="Farewell">
+      </div>
+    <div class="magi">
+      <h2>Why farewell program?</h2><br>
+      <h5>For the possible first and the last union</h5><br>
+      <h5>A final break celebration after a fast paced course</h5><br>
+      <h5>To appreciate our mentor & get her advices</h5><br>
+      <h5>And the last one, we don't know each other</h5>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <h3>Please! If you're interested, then, fill up this form.</h3>
+    <form id="form">
+  
+    <label for="name">Name on Certificate</label>
+    <input type="text" name="name" id="name">
+    <label for="email">Email Id</label>
+    <input type="text" name="email" id="email">
+    <label for="phone">Phone No.</label>
+    <input type="text" name="phone" id="phone">
+  <button type="submit" id="button" value="Send Email" >SUBMIT</button>
+</form>
+  </div>
+  
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('SxD0It3OD8nFm_Ype')
+  const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_26jbih6';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Thanks. I truly appreaciate it.');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
+</script>
+</body>
