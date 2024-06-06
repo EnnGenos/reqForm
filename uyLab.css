@@ -66,13 +66,13 @@ h5 {
     "vscode-edge-devtools.webhint": false
 }
 .container {
-    background-color: blue;
+    background-color: maroon;
     max-width: 600px;
     width: 80%;
     height: auto;
     margin: 0 auto;
     padding: 20px;
-    border: 2.5px solid red;
+    border: 2.5px solid white;
     border-radius: 5px;
     align-content: center;
     align-items: center;
@@ -88,7 +88,7 @@ label, input, textarea {
 button {
     background-color: blueviolet;
     color: white;
-    border: none;
+    border: 1.5px solid white;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 100%;
